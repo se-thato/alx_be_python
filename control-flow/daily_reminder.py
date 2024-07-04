@@ -14,7 +14,7 @@ def make_reminder(task, priority, time_bound):
                 Reminder += "that requires immediate attention today!"
             else:
                 Reminder += "Consider completing it when you have free time."
-            return reminder
+            return Reminder
         
         case "medium":
             Reminder = f"Reminder: '{task}' is a medium priority task "
@@ -22,7 +22,7 @@ def make_reminder(task, priority, time_bound):
                 Reminder += "that requires immediate attention today!"
             else:
                 Reminder += "Consider completing it when you have free time."
-            return reminder
+            return Reminder
         
         case "low":
             Reminder = f"Note: '{task}' is a low priority task. "
@@ -30,7 +30,7 @@ def make_reminder(task, priority, time_bound):
                 Reminder += "that requires immediate attention today!"
             else:
                 Reminder += "Consider completing it when you have free time."
-            return reminder
+            return Reminder
     
 def main():
     while True:
