@@ -13,7 +13,7 @@ def make_reminder(task, priority, time_bound):
             if time_bound == "yes":
                 Reminder += "that requires immediate attention today! "
             else:
-                Reminder += " Consider completing it when you have free time."
+                Reminder += "Consider completing it when you have free time."
             return Reminder
         
         case "medium":
@@ -21,7 +21,7 @@ def make_reminder(task, priority, time_bound):
             if time_bound == "yes":
                 Reminder += "that requires immediate attention today! "
             else:
-                Reminder += " Consider completing it when you have free time."
+                Reminder += "Consider completing it when you have free time."
             return Reminder
         
         case "low":
@@ -29,13 +29,13 @@ def make_reminder(task, priority, time_bound):
             if time_bound == "yes":
                 Reminder += "that requires immediate attention today!"
             else:
-                Reminder += " Consider completing it when you have free time."
+                Reminder += "Consider completing it when you have free time."
             return Reminder
     
 def main():
     while True:
         task, priority, time_bound = task_info()
-        reminder = make_reminder(task, priority, time_bound)
+        Reminder = make_reminder(task, priority, time_bound)
         print(Reminder)
 
         another_task =input("would you like to enter another task? (yes/no): ")
