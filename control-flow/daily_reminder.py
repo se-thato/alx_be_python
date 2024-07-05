@@ -1,12 +1,8 @@
-def task_info():
-    task = input("Enter your task: ") 
-    priority = input("priority(high/medium/low): ")
-    time_bound = input("Is it time-bound?(yes/no): ")
-    return task, priority, time_bound
+task = input("Enter your task: ") 
+priority = input("priority(high/medium/low): ")
+time_bound = input("Is it time-bound?(yes/no): ")
 
-def make_reminder(task, priority, time_bound):
-    Reminder = f"Reminder: '{task}' is a {priority} priority task "
-
+if time_bound = "yes":
     match priority:
         case "high":
             Reminder = f"Reminder: '{task}' is a high priority task "
