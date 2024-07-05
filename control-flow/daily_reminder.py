@@ -32,17 +32,3 @@ def make_reminder(task, priority, time_bound):
                 Reminder += "Consider completing it when you have free time."
             return Reminder
     
-def main():
-    while True:
-        task, priority, time_bound = task_info()
-        Reminder = make_reminder(task, priority, time_bound)
-        print(Reminder)
-
-        another_task =input("would you like to enter another task? (yes/no): ")
-        if another_task != "Yes":
-            break
-        
-        
-
-if __name__ == "__main__":
-    main()
