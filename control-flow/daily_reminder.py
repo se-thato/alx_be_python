@@ -10,6 +10,6 @@ if time_bound = "yes":
         case "low":
             return f"Note: '{task}' is a low priority task. Consider completing it when you have free time."
             
-            else:
-                return f"Invalid level please use (high/medium/low)"
+        else:
+            return f"Invalid level please use (high/medium/low)"
     
