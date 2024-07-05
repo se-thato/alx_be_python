@@ -5,38 +5,38 @@ def task_info():
     return task, priority, time_bound
 
 def make_reminder(task, priority, time_bound):
-    reminder = f"Reminder: '{task}' is a {priority} priority task "
+    Reminder = f"Reminder: '{task}' is a {priority} priority task "
 
     match priority:
         case "high":
-            reminder = f"Reminder: '{task}' is a high priority task "
+            Reminder = f"Reminder: '{task}' is a high priority task "
             if time_bound == "yes":
-                reminder += "that requires immediate attention today!"
+                Reminder += "that requires immediate attention today!"
             else:
-                reminder += "Consider completing it when you have free time."
-            return reminder
+                Reminder += "Consider completing it when you have free time."
+            return Reminder
         
         case "medium":
-            reminder = f"Reminder: '{task}' is a medium priority task "
+            Reminder = f"Reminder: '{task}' is a medium priority task "
             if time_bound == "yes":
-                reminder += "that requires immediate attention today!"
+                Reminder += "that requires immediate attention today!"
             else:
-                reminder += "Consider completing it when you have free time."
-            return reminder
+                Reminder += "Consider completing it when you have free time."
+            return Reminder
         
         case "low":
-            reminder = f"Note: '{task}' is a low priority task. "
+            Reminder = f"Note: '{task}' is a low priority task. "
             if time_bound == "yes":
-                reminder += "that requires immediate attention today!"
+                Reminder += "that requires immediate attention today!"
             else:
-                reminder += "Consider completing it when you have free time."
-            return reminder
+                Reminder += "Consider completing it when you have free time."
+            return Reminder
     
 def main():
     while True:
         task, priority, time_bound = task_info()
         reminder = make_reminder(task, priority, time_bound)
-        print(reminder)
+        print(Reminder)
 
         another_task =input("would you like to enter another task? (yes/no): ")
         if another_task != "Yes":
