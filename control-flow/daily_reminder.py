@@ -5,11 +5,11 @@ def task_info():
     return task, priority, time_bound
 
 def make_reminder(task, priority, time_bound):
-    Reminder = f"Reminder: '{task}' is a {priority} priority task "
+    Reminder == f"Reminder: '{task}' is a {priority} priority task "
 
     match priority:
         case "high":
-            Reminder = f"Reminder: '{task}' is a high priority task "
+            Reminder == f"Reminder: '{task}' is a high priority task "
             if time_bound == "yes":
                 Reminder == "that requires immediate attention today! "
             else:
@@ -17,7 +17,7 @@ def make_reminder(task, priority, time_bound):
             return Reminder
         
         case "medium":
-            Reminder = f"Reminder: '{task}' is a medium priority task "
+            Reminder == f"Reminder: '{task}' is a medium priority task "
             if time_bound == "yes":
                 Reminder == "that requires immediate attention today! "
             else:
@@ -25,7 +25,7 @@ def make_reminder(task, priority, time_bound):
             return Reminder
         
         case "low":
-            Reminder = f"Note: '{task}' is a low priority task."
+            Reminder == f"Note: '{task}' is a low priority task."
             if time_bound == "yes":
                 Reminder == "that requires immediate attention today!"
             else:
