@@ -25,7 +25,7 @@ def make_reminder(task, priority, time_bound):
             return Reminder
         
         case "low":
-            Reminder = f"Reminder: '{task}' is a low priority task."
+            Reminder = f"Note: '{task}' is a low priority task."
             if time_bound == "yes":
                 Reminder += "that requires immediate attention today!"
             else:
