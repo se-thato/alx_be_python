@@ -1,37 +1,19 @@
-def task_info():
-    task = input("Enter your task: ") 
-    priority = input("priority(high/medium/low): ")
-    time_bound = input("Is it time-bound?(yes/no): ")
-    return task, priority, time_bound
+task = input("Enter your task: ") 
+priority = input("priority(high/medium/low): ")
+time_bound = input("Is it time-bound?(yes/no): ")
 
-def make_reminder(task, priority, time_bound):
-    Reminder = f"Reminder: '{task}' is a {priority} priority task "
-
+if time_bound == "yes":
     match priority:
         case "high":
-            Reminder = f"Reminder: '{task}' is a high priority task "
-            if time_bound == "yes":
-                Reminder += "that requires immediate attention today!"
-            else:
-                Reminder += "Consider completing it when you have free time."
-            return Reminder
-        
-        case "medium":
-            Reminder = f"Reminder: '{task}' is a medium priority task "
-            if time_bound == "yes":
-                Reminder += "that requires immediate attention today!"
-            else:
-                Reminder += "Consider completing it when you have free time."
-            return Reminder
+            print (f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
         
         case "low":
-            Reminder = f"Note: '{task}' is a low priority task. "
-            if time_bound == "yes":
-                Reminder += "that requires immediate attention today!"
-            else:
-                Reminder += "Consider completing it when you have free time."
-            return Reminder
+            print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
+            
+        case_:
+            print( f"Invalid level please use (high/medium/low)")
     
+<<<<<<< HEAD
 def main():
     while True:
         task, priority, time_bound = task_info()
@@ -46,3 +28,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+>>>>>>> 0fb3134941deda1b110b2a197becd4243b5a92b4
