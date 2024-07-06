@@ -36,7 +36,7 @@ def main():
     while True:
         task, priority, time_bound = task_info()
         reminder = make_reminder(task, priority, time_bound)
-        print(Reminder)
+        print(reminder)
 
         another_task =input("would you like to enter another task? (yes/no): ")
         if another_task != "Yes":
