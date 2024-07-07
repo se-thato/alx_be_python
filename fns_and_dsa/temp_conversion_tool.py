@@ -22,7 +22,7 @@ def main():
         converted_temp = convert_to_celsius(temp)
         print(f"{temp}°F is {converted_temp}°C")
     else:
-        print(f"Invalid input. Please specify 'C' for Celsius or 'F' for fahrenheit.")
+        print("Invalid input. Please specify 'C' for Celsius or 'F' for fahrenheit.")
         return
     
 if __name__ == "__main__":
