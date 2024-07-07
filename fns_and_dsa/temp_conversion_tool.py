@@ -1,5 +1,5 @@
-FAHRENHEIT_TO_CELCIUS_FACTOR = (5/9)
-CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
+FAHRENHEIT_TO_CELCIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit): 
     global FAHRENHEIT_TO_CELCIUS_FACTOR
@@ -25,7 +25,7 @@ def main():
         print(f"{temp}°F is {converted_temp}°C")
     else:
         print("Invalid input. Please specify 'C' for Celsius or 'F' for fahrenheit.")
-        return
+        
     
 if __name__ == "__main__":
     main()
