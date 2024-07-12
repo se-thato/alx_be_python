@@ -5,11 +5,11 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 CELSIUS_OFFSET = 32
 
 def convert_to_celsius(fahrenheit): 
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
+    FAHRENHEIT_TO_CELSIUS_FACTOR
     return (fahrenheit - CELSIUS_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
    
 def convert_to_fahrenheit(celsius):
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
+    CELSIUS_TO_FAHRENHEIT_FACTOR
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + CELSIUS_OFFSET
     
 
