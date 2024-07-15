@@ -6,6 +6,6 @@ def safe_divide(numerator, denominator):
             print("Error: Cannot divide by zero.")
 
         result = num / denom
-        print(f"The result of the division is {result}")
+        return f"The result of the division is {result}"
     except ValueError:
         raise ValueError("Error: Please enter numeric values only.")
