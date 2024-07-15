@@ -8,4 +8,4 @@ def safe_divide(numerator, denominator):
         result = num / denom
         print(f"The result of the division is {result}")
     except ValueError:
-        print("Error: Please enter numeric values only.")
+        raise ValueError("Error: Please enter numeric values only.")
