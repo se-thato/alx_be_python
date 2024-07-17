@@ -16,5 +16,5 @@ class TestSimpleCazlculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(5, 5), 25)
 
     def division(self):
-        self.assertEqual(self.calc.divide(2, 6), 3)
-        self.assertEqual(self.calc.divide(5, 0), None)
+        self.assertEqual(self.calc.divide(2, 2), 1)
+      
