@@ -17,7 +17,7 @@ class BankAccount:
                 return True
             else:
                 return "Insufficient funds."
-                return True
+                return False
         else:
             print("Withdrawal amount must be positive.")
             return False
