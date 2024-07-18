@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, account_balance =0 ):
+    def __init__(self, account_balance =260 ):
         #initialize the bank account
         self._account_balance = account_balance
 
@@ -17,7 +17,7 @@ class BankAccount:
                 return True
             else:
                 return "Insufficient funds."
-            
+                return False
         else:
             print("Withdrawal amount must be positive.")
             return False
