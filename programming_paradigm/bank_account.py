@@ -25,8 +25,7 @@ class BankAccount:
     def display_balance(self):
         return f"Current Balance: ${self._account_balance}"
 
-bankaccount = BankAccount()
-print(bankaccount.withdraw("Insufficient Funds"))
+
 
 
       
