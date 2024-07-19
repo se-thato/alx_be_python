@@ -40,7 +40,7 @@ class Library:
                 return f"Book '{title}' has been returned."
             return f"Book '{title}' was not checked out."
         
-    def list_available_book(self):
+    def list_available_books(self):
         available_books = [book for book in self._books if book.is_available()]
         if not available_books:
             return "No books are available."
@@ -56,16 +56,16 @@ library.add_book(book1)
 library.add_book(book2)
 
 #list of available books
-print("Available book:", library.list_available_book())
+print("Available book:", library.list_available_books())
 
 #checkout book
 print(library.check_out_book("2002 war"))
 
 #available books after check out 
-print("Available books:", library.list_available_book())
+print("Available books:", library.list_available_books())
 
 #return the book
 print(library.return_book('2002 war'))
 
 #list of books after a book is returned 
-print("Available books:", library.list_available_book())
+print("Available books:", library.list_available_books())
