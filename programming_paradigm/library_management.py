@@ -11,7 +11,7 @@ class Book:
             return True
         False
 
-    def return_books(self):
+    def return_book(self):
         if self._is_checked_out:
             self._is_checked_out = False
             return True 
