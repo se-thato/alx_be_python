@@ -1,5 +1,5 @@
 class Book:
-    def __str__(self, title, author):
+    def __init__(self, title, author):
         self.title = title
         self.author = author
 
@@ -15,7 +15,7 @@ class PrintBook(Book):
 
 
 class Library:
-    def __init__(self):
+    def __str__(self):
         self.books = []
 
     def add_book(self, book):
@@ -27,7 +27,7 @@ class Library:
                 print(f"Book: {book.title} by {book.author}")
             elif isinstance(self, EBook):
                 print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
-        else:
+        else:  
             print(f"Print Book: {book.title} by {book.author}, Page Count: {book.page_count}")
             
             
