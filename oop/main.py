@@ -1,4 +1,4 @@
-from class_static_method_demo import Calculator
+from oop.class_static_methods_demo import Calculator
 
 def main():
     #use nstatic method
