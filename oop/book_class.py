@@ -14,8 +14,5 @@ class Book:
         return f"Book ('{self.title}', '{self.author}', {self.year})"
     
 
-if __name__ == "__main__":
-    book = Book('2002', 'Thato', '1964')
-    print(str(book))
-    print(repr(book))
+
     
